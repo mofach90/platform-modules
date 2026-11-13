@@ -28,7 +28,7 @@ lint: ## tflint (rules in .tflint.hcl)
 	tflint --recursive --config "$(CURDIR)/.tflint.hcl"
 
 scan: ## trivy config + gitleaks
-	trivy config --exit-code 1 --severity HIGH,CRITICAL --skip-dirs '**/.terraform' --quiet .
+	trivy config --exit-code 1 --severity HIGH,CRITICAL --skip-dirs '**/.terraform' --skip-dirs node_modules --quiet .
 	gitleaks git --no-banner --redact .
 
 check: fmt-check validate lint scan ## run before finishing (same as CI)

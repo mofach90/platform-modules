@@ -25,3 +25,6 @@ __pycache__/
 
 # Examples are only validated; no lock file needed
 examples/**/.terraform.lock.hcl
+
+# Release tooling
+node_modules/
