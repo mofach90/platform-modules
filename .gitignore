@@ -22,3 +22,6 @@ terraform.rc
 .claude/settings.local.json
 .DS_Store
 __pycache__/
+
+# Examples are only validated; no lock file needed
+examples/**/.terraform.lock.hcl

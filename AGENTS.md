@@ -2,7 +2,7 @@
 
 Versioned Terraform building blocks for the `platform-live` demo platform
 (DevFest Berlin 2026). Project docs live in `../platform-live/docs/`.
-Used from PLAN step 8 on; before that, modules live in `platform-live/modules/`.
+platform-live uses these modules pinned by tag (`?ref=vX.Y.Z`).
 
 ## Layout
 ```
